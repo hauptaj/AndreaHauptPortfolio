@@ -218,18 +218,18 @@ a:active {
 .cards {
 	margin: 0 auto;
 	width: 100%;
-	position:absolute;
+	/*position:absolute;*/
 	text-align: center;
 }
 
 .card {
 	position: relative;
 	height: 500px;
-	width: 29%;
+	width: 370px;
 	margin: 1%;
 	padding: 10px;
 	background-color: white;
-	border-radius: 50px;
+	border-radius: 50px 0 50px 0;
 	box-shadow: 5px 5px 5px grey;
 	display: inline-block;
 	text-align: left;
@@ -242,7 +242,7 @@ a:active {
 	width: 95%;
 	height: 50%;
 	background-color: LightGrey;
-	border-radius: 50px;
+	border-radius: 50px 0 50px 0;
 }
 
 .cards h2 {
@@ -259,10 +259,23 @@ a:active {
 	font-family: 'Scope One', serif;
 }
 
+@media screen and (max-width: 1200px) {
+	.card {
+		width: 400px;
+	}
+}		
+
+@media screen and (max-width: 890px) {
+	.card {
+		width: 500px;
+	}
+}
+
 @media screen and (max-width: 500px) {
 	.card {
-		width: 100%;
+		width: 340px;
 		height: 260px;
+		margin: 0 0 10 0;
 	}
 
 	.cards p {
@@ -279,11 +292,3 @@ a:active {
 		text-align: center;
 	}
 }	
-	
-@media screen and (max-width: 700px) {
-	.card {
-		width: 100%%;
-	}
-}	
-
-
