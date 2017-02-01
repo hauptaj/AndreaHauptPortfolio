@@ -53,25 +53,32 @@ body {
 	background-color: #eff2f4;
 	background-position: center;
 	font-family: 'Scope One', serif;
+	color: #888;
 }
 
+/*---------HEADER AREA---------*/
 header {
 	position: absolute;
 	width: 100%;
-	height: 300px;
+	height: 121px;
 	margin-left: 0px;
-	margin-top: 0px;
+	margin-top: 123px;
 	background-image: url(images/body_bg.jpg);
+	border-bottom: solid 10px #f04e3e;
 }
 
 #logo {
 	background-color: black;
 	width: 100%;
 	height: auto;
-	margin-left: auto;
-	margin-right: auto;
 	position: fixed;
 	z-index: 1;
+}
+
+#logo img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 h2.title {
@@ -81,19 +88,18 @@ h2.title {
 	-webkit-box-align:center;
     -webkit-box-pack:center;
     display:-webkit-box;
-	margin-top: 160px;
+	margin-top: 27px;
 }
 
 #navigation {
 	background-color: #f04e3e;
-	height: 50px;
+	height: 55px;
 	width: 100%;
 	margin-left: auto;
 	margin-right:auto;
 	padding: 0;
 	position:absolute;
-	top: 300px;
-	z-index: 1;
+	top: 80px;
 }
 
 #navigation ul {
@@ -112,19 +118,20 @@ h2.title {
 #navigation li a {
 	display: block;
 	text-align: center;
-	padding: 16px 17px;
+	padding: 19px 17px;
 	text-decoration: none;
 	font-family: 'Scope One', serif;
 	color: #eff2f4;
 }
 
 #navigation li a:hover {
+	margin-top: 1px;
 	background-color: #eff2f4;
 	color: #f04e3e;
 }
 
 #navigation li a:active {
-	background-color: black;
+	background-color: #eff2f4;
 }
 
 .on {
@@ -132,6 +139,151 @@ h2.title {
 	color: #eff2f4;
 	font-size: 150%;
 	margin-top: -3px;
-	box-shadow: 5px 5px 3px grey;
+	box-shadow: 5px 5px 3px grey
 }
+
+/*-----------MAIN CONTENT----------*/
+article {
+	position: relative;
+	top: 295px;
+	left: 10px;
+
+}
+
+p {
+	margin-bottom: 14px;
+	margin-right: 20px;
+}
+
+a:link {
+	text-decoration: none;
+	color: #f04e3e;
+}
+
+a:visited {
+	color: #000;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	color: black;
+}
+
+.indent {
+	margin-left: 240px;
+
+}
+
+.pic {
+	height: 200px;
+	width: 200px;
+	margin: 10px;
+	border-radius: 50%;
+	float: left;
+	overflow: hidden;
+}
+
+.pic {
+  float: left;
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+  overflow: hidden; 
+}
+
+/*------------IMAGE GROW---------*/
+.andrea img {
+  display: inline;
+  margin: 10px;
+  height: 200px;
+  width: 200px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.andrea img:hover {
+  width: 240px;
+  height: 240px;
+}
+
+/*--------PORFOLIO CARDS---------*/
+
+
+.cards {
+	margin: 0 auto;
+	width: 100%;
+	position:absolute;
+	text-align: center;
+}
+
+.card {
+	position: relative;
+	height: 500px;
+	width: 29%;
+	margin: 1%;
+	padding: 10px;
+	background-color: white;
+	border-radius: 50px;
+	box-shadow: 5px 5px 5px grey;
+	display: inline-block;
+	text-align: left;
+}
+
+.screenshot {
+	position: absolute;
+	top: 0px;
+	margin-top:10px;
+	width: 95%;
+	height: 50%;
+	background-color: LightGrey;
+	border-radius: 50px;
+}
+
+.cards h2 {
+	position: absolute;
+	top: 55%;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 150%;
+	color: black;
+}
+
+.cards p {
+	position: absolute;
+	top: 60%;
+	font-family: 'Scope One', serif;
+}
+
+@media screen and (max-width: 500px) {
+	.card {
+		width: 100%;
+		height: 260px;
+	}
+
+	.cards p {
+		display: none;
+	}
+
+	.screenshot {
+		height: 80%;
+	}
+
+	.cards h2 {
+		position: absolute;
+		top: 240px;
+		text-align: center;
+	}
+}	
+	
+@media screen and (max-width: 700px) {
+	.card {
+		width: 100%%;
+	}
+}	
+
 
